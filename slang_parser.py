@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 slang_dict = []
 
-for letter in range(ord('Н'), ord('а')):
+for letter in range(ord('А'), ord('а')):
     print(f'Parsing "{chr(letter)}"')
     for page in range(1, 35):
         url = f"https://slang.su/?page={page}&content={chr(letter)}*"
